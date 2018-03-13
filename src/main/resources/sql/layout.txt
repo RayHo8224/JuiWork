@@ -1,0 +1,23 @@
+user  使用者
+
+user_id  				帳號		pk      not null
+user_password  			密碼			    not null
+user_name  				姓名			    not null
+-------------------------------------------
+workLog 日誌主檔
+
+log_id    				 序號 		pk		not null
+log_date  				 日期         			not null
+-------------------------------------------
+workLogDetail 日誌明細
+
+log_id 					 序號     	pk fk  	not null
+log_description  		 內容                   
+log_status         		 狀態代碼 	fk		not null
+log_updateTime   		 修改時間		
+---------------------------------------------
+status 狀態
+
+status_id                狀態代碼   pk		not null
+status_description 	 	  狀態敘述			not null
+
